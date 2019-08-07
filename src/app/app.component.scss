@@ -1,0 +1,50 @@
+@import '../styles.scss';
+.navigation-btns{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  button{
+    background: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    min-width: 100px;
+    margin: 5px;
+  }
+}
+.folder{
+  padding: 10px;
+  border-bottom: 0.5px solid #cdcdcd;
+  border-top: 0.5px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  .folder-icon{
+    color: $folder-color;
+    margin-right: 1rem;
+  }
+}
+.submit-btn{
+  background: transparent;
+  border: none;
+}
+.create-folder{
+  flex-direction: column;
+  form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+    input{
+      border: none;
+      width: 95%;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+.error-msg{
+  color: red;
+  font-size: 12px;
+  padding: 5px 10px;
+}
